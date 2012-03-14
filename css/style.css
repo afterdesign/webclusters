@@ -1,3 +1,5 @@
+
+
 body {
     background-color: #221E1D;
 }
@@ -232,4 +234,76 @@ h7, h6, h5, h4, h3, h2, h1 {
     -webkit-box-shadow: 5px 5px 0px 0px #221E1D;
     -moz-box-shadow: -5px 5px 0px 0px #221E1D;
     box-shadow: -5px 5px 0px 0px #221E1D;
+}
+
+.speaker {
+    color: #221E1D;
+    background-color: #7AA5C6;
+    width: 800px;
+    
+    margin: 0;
+    text-align: left;
+    padding: 5px 0 5px 5px;
+    
+    -webkit-box-shadow: 5px 5px 0px 0px #221E1D;
+    -moz-box-shadow: -5px 5px 0px 0px #221E1D;
+    box-shadow: 5px 5px 0px 0px #221E1D;
+    font-family: Helvetica;
+    min-height: 170px;
+}
+
+.speaker img {
+    border: 1px solid black;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.who {
+
+}
+
+.bio {
+
+}
+
+.speaker a {
+    color: #221E1D;
+}
+
+.speaker a:hover {
+    color: white;
+}
+
+.speaker .name {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.speaker .speaker_social {
+    float: right;
+    padding-right: 8px;
+}
+
+.twitter {
+    font-family: WebIconFonts;
+}
+
+.topic {
+    margin-top: 15px;
+}
+
+.topic ul {
+    list-style: none;
+    margin: 0;
+
+}
+
+.topic .about {
+    font-weight: bold;
+}
+
+.topic_more {
+    margin-top: 10px;
 }
