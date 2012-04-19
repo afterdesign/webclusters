@@ -130,7 +130,7 @@
                 running queries, slow template rendering, complicated processing,
                 messaging - you need to know how to handle such challenges. This talk
                 will cover the very basics and more advanced details of Ruby on Rails
-                caching (views & data), offloading web server with background jobs,
+                caching (views &amp; data), offloading web server with background jobs,
                 best practices for choosing proper libraries and some general good
                 practices and ideas for making your application scale better.
             </div>
@@ -151,7 +151,7 @@
                 he worked through many different popular frameworks backed with different 
                 languages e.g. Drupal (PHP), Django (Python), Ruby On Rails (Ruby). In 2007 
                 he started to work mainly with JavaScript. Currently he devotes most of his 
-                time in development of tools that would allow robust creation of modern 
+                time to development of tools that would allow robust creation of modern 
                 dynamic web applications.
             </div>
             <div class="topic">
@@ -163,12 +163,12 @@
                 </div>
             </div>
             <div class="topic_more">
-                Today's common web applications depend a lot on server-side but many 
-                of server-side tasks can also be done on client-side.
+                Today common web applications depend greatly on server-side, but many 
+                of backend tasks can also be done on client-side.
                 In my presentation I will show how with modern technologies we can 
-                build web applications that can live fully on client-side even without 
-                connection to server. I will also show how to write them efficiently 
-                reusing same JavaScript code on both server and client side.
+                build web applications that can live fully on client-side, even without 
+                connection to a server. I will also show how to write them efficiently 
+                reusing the same JavaScript code on both server and client side.
             </div>
     </div>
     <br style="clear: both" />
@@ -283,15 +283,14 @@
     </div>
     <div class="text">
             <div class="bio">
-                Programmer and software architect connected with industry more than 12 years. 
+                Programmer and software architect connected with the web industry for more than 12 years. 
                 He is currently designing and implementing web application architectures in project 
                 where the capacity factor is crutial. Previously worked as architect, tech-lead, and 
-                developer in "nasza-klasa" and "gadu-gadu" (called now "gg networks").<br />
-                Mariusz will be speaking two times on webclusters with 2 awesome topics
-                
+                developer for <i>nasza-klasa.pl</i> (now nk.pl) and <i>Gadu-gadu</i> (now "gg networks").<br />
+                Mariusz will be speaking on WebClusters with 2 awesome topics.
             </div>
             <div class="topic">
-                <div class="about">First topic: </div>
+                <div class="about">First topic:</div>
                 <div>
                     <ul>
                         <li>Varnish’em all</li>
@@ -299,16 +298,16 @@
                 </div>
             </div>
             <div class="topic_more">
-                Varnish is modern web applictions accelerator and many times it's described as caching reverse HTTP proxy. 
-                Placed in the infrastructure right before http servers relieves them by caching generated content, 
-                while maintaning a very high performance. Varnish can do much more than just a simple caching of content. 
-                Configuration language VCL allows you to change the behavior of server also allows for load balancing with 
-                control of backends. Partial support for Edge Side Includes or URL rewriting are some of the possibilities 
-                by which Varnish is used in services like Facebook, Wikia or Polish service gazeta.pl <br /><br />
+                Varnish is a modern web applictions accelerator and frequently it's described as caching reverse HTTP proxy. 
+                Placed in the infrastructure right in front of HTTP servers relieves them by caching generated content, 
+                while maintaning a very high performance. Varnish can do much more than just a simple content caching.
+                VCL configuration language allowing you to change the behavior of a server, load balancing with
+                controling backends' status, partial support for Edge Side Includes or URL rewriting are only a part of the possibilities
+                thanks to which Varnish is successfully used in websites like Facebook, Wikia or Polish portal gazeta.pl <br /><br />
                 
-                During the session we will trace installation, launch and configuration process of Varnish in a typical web 
-                application with big/small infrastructure. During the presentation we will also meet with VMODs which are 
-                helping with programming advanced logic in VCL.
+                During the session we will follow the process of installation, launch and configuration of Varnish in a typical web 
+                application for smaller and larger infrastructure. During the presentation we will also get to know some VMODs which are 
+                helping programming advanced logic in VCL.
             </div>
             
             <div class="topic">
@@ -320,20 +319,20 @@
                 </div>
             </div>
             <div class="topic_more">
-                Memcached and MySQL are solutions, which probably needs no introduction to anyone. 
+                Memcached and MySQL probably needs no introduction to anyone.
                 They are working great standalone but together they can solve most of the performance 
-                problems (mainly with database). It should be noted that both projects complement each 
-                other perfectly well in other situations which are far from typical caching of data.<br /><br />
+                issues related to the database layer. It should be noted that both projects complement each 
+                other perfectly well in other situations, far from typical caching of data.<br /><br />
                 
-                In the first part of the presentation we will meet HandlerSocket which introduces simplified 
-                and directed access to database storage-table engine, which can result in increase in reading 
-                data base on primary key up to several hundred thousands per second. HandlerSocket became the 
-                prototype introduced in MySQL 5.6 memcached API to which we will devote more attention.<br /><br />
+                In the first part of the presentation we will see HandlerSocket which introduces simplified 
+                and directe access to database table's storage engine, which can greatly improve performance of
+                primary key seeks even up to several hundred thousand reads per second. HandlerSocket inspired
+                the memcached API introduced in MySQL 5.6, that we will dicuss a bit more.<br /><br />
                 
-                The second part will be focused on the use of MySQL to transferr data between memcached clusters 
-                in different locations. In the case of scaling applications in separate locations there is often 
-                need to place in each of them local, consistent copy of data cache to provide fast and easy access 
-                to key data. On the example of Facebook architecture we will look at the problems of fully resistant 
+                The second part will be focused on using MySQL to transfer data between memcached clusters 
+                in different locations. When scaling applications with different server room locations there is often 
+                a need to place in each of them local, consistent copy of data cache to provide fast and easy access 
+                to key data. On the example of Facebook architecture we will look at the problems of fault resistant 
                 method to solve this problem, which in addition can also be used in smaller projects, such as session 
                 data redundancy.
             </div>
